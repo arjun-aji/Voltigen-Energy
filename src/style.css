@@ -10,7 +10,8 @@
 
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 90px; /* Offset for sticky header */
+    scroll-padding-top: 90px;
+    /* Offset for sticky header */
 }
 
 * {
@@ -53,26 +54,27 @@ header {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
-    background: rgba(255, 255, 255, 0.22);
+    background: #ffffff;
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     border-radius: 100px;
-    border: 1px solid rgba(255, 255, 255, 0.4);
+    border: 1px solid rgba(9, 27, 41, 0.08);
     box-shadow: 0 8px 32px rgba(9, 27, 41, 0.05);
     transition: var(--transition-smooth);
 }
 
 header:hover {
-    background: rgba(255, 255, 255, 0.32);
+    background: #ffffff;
     box-shadow: 0 10px 40px rgba(9, 27, 41, 0.08);
-    border-color: rgba(255, 255, 255, 0.6);
+    border-color: rgba(9, 27, 41, 0.12);
 }
 
 header.scrolled {
     padding: 8px 24px;
     top: 12px;
-    background: rgba(255, 255, 255, 0.35);
+    background: #ffffff;
     box-shadow: 0 10px 40px rgba(9, 27, 41, 0.08);
+    border-color: rgba(9, 27, 41, 0.08);
 }
 
 .logo-container {
@@ -347,7 +349,7 @@ header.scrolled {
 }
 
 .hero-img {
-    width: 130%;
+    width: 120%;
     height: auto;
     object-fit: contain;
     display: block;
@@ -644,13 +646,14 @@ header.scrolled {
 }
 
 .modal-container {
-    background: rgba(255, 255, 255, 0.62);
+    background: #ffffff;
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
-    border: 1px solid rgba(255, 255, 255, 0.6);
+    border: 1px solid rgba(9, 27, 41, 0.08);
     border-radius: 32px;
     width: 100%;
-    max-width: 950px; /* Increased from 800px for larger desktop layout */
+    max-width: 950px;
+    /* Increased from 800px for larger desktop layout */
     max-height: 90vh;
     overflow-y: auto;
     position: relative;
@@ -701,7 +704,7 @@ header.scrolled {
 }
 
 .modal-left {
-    background: rgba(244, 239, 235, 0.5);
+    background: #ffffff;
     border-right: 1px solid rgba(9, 27, 41, 0.05);
     display: flex;
     align-items: center;
@@ -712,11 +715,13 @@ header.scrolled {
 .modal-img-container {
     width: 100%;
     max-width: 440px;
-    height: 420px; /* Fixed height to ensure both front/back images render at the same size */
+    height: 420px;
+    /* Fixed height to ensure both front/back images render at the same size */
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative; /* Position context for inner navigation buttons */
+    position: relative;
+    /* Position context for inner navigation buttons */
 }
 
 .modal-product-img {
@@ -904,7 +909,7 @@ header.scrolled {
 /* Modal Reviews Section Styles */
 .modal-reviews-section {
     padding: 30px 40px 40px;
-    background: rgba(244, 239, 235, 0.3);
+    background: #ffffff;
     border-top: 1px solid rgba(9, 27, 41, 0.06);
 }
 
@@ -937,8 +942,8 @@ header.scrolled {
 
 /* Google Review Card Design */
 .google-review-card {
-    background: rgba(255, 255, 255, 0.85);
-    border: 1px solid rgba(255, 255, 255, 0.5);
+    background: #f9f7f4;
+    border: 1px solid rgba(158, 126, 90, 0.12);
     border-radius: 20px;
     padding: 24px;
     box-shadow: 0 4px 15px rgba(9, 27, 41, 0.02);
@@ -1297,19 +1302,23 @@ header.scrolled {
 
     .modal-img-container {
         max-width: 260px;
-        height: 280px; /* Shorter height override for mobile view */
+        height: 280px;
+        /* Shorter height override for mobile view */
     }
 
     .modal-nav-btn {
         width: 38px;
         height: 38px;
     }
+
     .modal-nav-btn.prev-btn {
         left: 8px;
     }
+
     .modal-nav-btn.next-btn {
         right: 8px;
     }
+
     .modal-nav-btn svg {
         width: 18px;
         height: 18px;
@@ -1394,8 +1403,8 @@ header.scrolled {
         top: 12px;
         margin: 0 auto;
         border-radius: 100px;
-        border: 1px solid rgba(255, 255, 255, 0.4);
-        background: rgba(255, 255, 255, 0.22);
+        border: 1px solid rgba(9, 27, 41, 0.08);
+        background: #ffffff;
         backdrop-filter: blur(15px);
         -webkit-backdrop-filter: blur(15px);
         box-shadow: 0 8px 32px rgba(9, 27, 41, 0.05);
@@ -1404,10 +1413,10 @@ header.scrolled {
     header.scrolled {
         padding: 6px 16px;
         top: 8px;
-        background: rgba(255, 255, 255, 0.3);
+        background: #ffffff;
         backdrop-filter: blur(20px);
         -webkit-backdrop-filter: blur(20px);
-        border-color: rgba(255, 255, 255, 0.5);
+        border-color: rgba(9, 27, 41, 0.08);
         box-shadow: 0 10px 40px rgba(9, 27, 41, 0.08);
     }
 
@@ -1431,7 +1440,7 @@ header.scrolled {
         right: 0;
         width: 280px;
         height: 100vh;
-        background: rgba(235, 230, 222, 0.95);
+        background: #ffffff;
         backdrop-filter: blur(25px);
         -webkit-backdrop-filter: blur(25px);
         box-shadow: -10px 0 30px rgba(9, 27, 41, 0.15);
@@ -2514,13 +2523,14 @@ body.loading {
     left: 0;
     width: 100%;
     height: 100%;
-    background: radial-gradient(circle at center, #2d2015 0%, #150e09 100%); /* Rich coffee brown radial gradient */
+    background: radial-gradient(circle at center, #2d2015 0%, #150e09 100%);
+    /* Rich coffee brown radial gradient */
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 99999;
-    transition: opacity 0.8s cubic-bezier(0.77, 0, 0.175, 1), 
-                visibility 0.8s cubic-bezier(0.77, 0, 0.175, 1);
+    transition: opacity 0.8s cubic-bezier(0.77, 0, 0.175, 1),
+        visibility 0.8s cubic-bezier(0.77, 0, 0.175, 1);
     opacity: 1;
     visibility: visible;
 }
@@ -2580,6 +2590,7 @@ body.loading {
     0% {
         width: 0%;
     }
+
     100% {
         width: 100%;
     }
@@ -2591,6 +2602,7 @@ body.loading {
         opacity: 0.85;
         text-shadow: 0 0 0px rgba(158, 126, 90, 0);
     }
+
     100% {
         transform: scale(1.02);
         opacity: 1;
@@ -2603,6 +2615,7 @@ body.loading {
         transform: scale(0.96);
         filter: brightness(0) invert(1) opacity(0.8) drop-shadow(0 4px 8px rgba(158, 126, 90, 0.2));
     }
+
     100% {
         transform: scale(1.04);
         filter: brightness(0) invert(1) opacity(1) drop-shadow(0 8px 20px rgba(158, 126, 90, 0.5));
