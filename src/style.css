@@ -1446,6 +1446,34 @@ header.scrolled {
         transform: translateX(0);
     }
 
+    .mobile-nav-close {
+        position: absolute;
+        top: 24px;
+        right: 24px;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        background: rgba(9, 27, 41, 0.05);
+        border: 1px solid rgba(9, 27, 41, 0.1);
+        color: var(--primary-dark);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: var(--transition-smooth);
+    }
+
+    .mobile-nav-close:hover {
+        background: var(--primary-dark);
+        color: #ffffff;
+        transform: rotate(90deg);
+    }
+
+    .mobile-nav-close svg {
+        width: 20px;
+        height: 20px;
+    }
+
     .nav-links {
         flex-direction: column;
         background: none;
