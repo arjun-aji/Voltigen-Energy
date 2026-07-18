@@ -5,7 +5,8 @@ export const productsData = {
   multivitamin: {
     title: "Multivitamin",
     subtitle: "Daily Health & Vitality",
-    price: "Rs 00.00",
+    price: "Rs 2,499",
+    offerPrice: "Rs 1,250",
     image: "/assets/multivitamin.png",
     images: ["/assets/multivitamin.png", "/assets/multivitaminback.png"],
     description: "Fuel Your Performance. Protect Your Health. Missing out on vital nutrients can drain your energy and slow you down. Voltigen Multivitamin is your ultimate daily defense, engineered to bridge nutritional gaps, supercharge your immune system, and fuel your everyday vitality. Featuring a high-potency blend of 30 essential nutrients, it delivers complete, premium daily nutrition support in one convenient bottle. Whether you are crushing professional goals, keeping up with a demanding lifestyle, or pushing your limits in training, Voltigen provides the foundational fuel your body needs to thrive.",
@@ -62,7 +63,8 @@ export const productsData = {
   fishoil: {
     title: "Fish Oil",
     subtitle: "Premium Omega-3",
-    price: "Rs 00.00",
+    price: "Rs 2,799",
+    offerPrice: "Rs 1,500",
     image: "/assets/fishoil.png",
     images: ["/assets/fishoil.png", "/assets/fishoilback.png"],
     description: "Voltigen 3x Strength Omega-3 Fish Oil is a premium, high-potency dietary supplement designed to deliver maximum cardiovascular, joint, and cognitive support. Each bottle contains 100 premium softgels packed with an impressive 1250 mg of purified fish oil per serving, yielding an industry-leading 540 mg of EPA and 360 mg of DHA. Engineered for superior absorption and ultimate daily wellness, this ultra-pure formula provides the essential fatty acids your body needs to fuel peak physical performance, protect your heart, and sharpen mental clarity.",

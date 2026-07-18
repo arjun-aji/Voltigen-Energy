@@ -593,6 +593,54 @@ header.scrolled {
     color: var(--primary-dark);
 }
 
+.product-card-price-row {
+    display: flex;
+    gap: 12px;
+    align-items: baseline;
+    margin: 12px 0 18px;
+}
+
+.product-card-price-old {
+    font-size: 14px;
+    color: rgba(9, 27, 41, 0.65);
+    font-weight: 700;
+}
+
+.product-card-offer {
+    font-size: 20px;
+    font-weight: 900;
+    color: var(--accent-gold);
+}
+
+.modal-price-row {
+    display: flex;
+    gap: 16px;
+    align-items: baseline;
+    margin-bottom: 16px;
+}
+
+.modal-price-old {
+    font-size: 18px;
+    color: rgba(9, 27, 41, 0.65);
+    font-weight: 700;
+}
+
+.modal-offer-price {
+    font-size: 28px;
+    font-weight: 900;
+    color: var(--accent-gold);
+}
+
+.price-label {
+    display: inline-block;
+    margin-right: 6px;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    color: rgba(9, 27, 41, 0.45);
+    font-weight: 800;
+}
+
 .product-details-btn {
     padding: 12px 24px;
     border-radius: 100px;

@@ -87,7 +87,10 @@ export default function ProductModal({ activeProductId, onClose }) {
             <div className="modal-right">
               <h3 className="modal-product-title" id="modal-product-title">{activeProduct.title}</h3>
               <p className="modal-product-subtitle" id="modal-product-subtitle">{activeProduct.subtitle}</p>
-              <div className="modal-product-price" id="modal-product-price">{activeProduct.price}</div>
+              <div className="modal-price-row">
+                <span className="modal-price-old"><span className="price-label">MRP</span> {activeProduct.price}</span>
+                <span className="modal-offer-price"><span className="price-label">Offer</span> {activeProduct.offerPrice}</span>
+              </div>
               <div className="modal-divider"></div>
               <p className="modal-product-description" id="modal-product-desc">
                 {activeProduct.description}

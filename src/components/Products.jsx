@@ -14,6 +14,10 @@ export default function Products({ onOpenDetails }) {
           <div className="product-card-bottom">
             <h3 className="product-title">Multivitamin</h3>
             <p className="product-subtitle">Daily Health & Vitality</p>
+            <div className="product-card-price-row">
+              <span className="product-card-price-old"><span className="price-label">MRP</span> Rs 2,499</span>
+              <span className="product-card-offer"><span className="price-label">Offer</span> Rs 1,250</span>
+            </div>
 
             <div className="product-features">
               <div className="feature-item">
@@ -77,6 +81,10 @@ export default function Products({ onOpenDetails }) {
           <div className="product-card-bottom">
             <h3 className="product-title">Fish Oil</h3>
             <p className="product-subtitle">Premium Omega-3</p>
+            <div className="product-card-price-row">
+              <span className="product-card-price-old"><span className="price-label">MRP</span> Rs 2,799</span>
+              <span className="product-card-offer"><span className="price-label">Offer</span> Rs 1,500</span>
+            </div>
 
             <div className="product-features">
               <div className="feature-item">
