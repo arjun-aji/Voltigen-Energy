@@ -1165,17 +1165,19 @@ header.scrolled {
 .science-bullets-list {
     list-style: none;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     gap: 16px;
     margin-top: 8px;
+    align-items: start;
 }
 
 .science-bullet-item {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 12px;
     font-weight: 700;
     font-size: 13.5px;
+    line-height: 1.4;
     color: var(--primary-dark);
     text-transform: uppercase;
     letter-spacing: 0.5px;
@@ -1212,9 +1214,10 @@ header.scrolled {
 }
 
 .science-content.center-layout .science-bullets-list {
-    grid-template-columns: repeat(3, 1fr);
-    width: 100%;
-    margin-top: 24px;
+    grid-template-columns: repeat(3, minmax(180px, 1fr));
+    width: min(880px, 100%);
+    margin: 24px 0 0 auto;
+    justify-items: start;
 }
 
 .science-content.center-layout .science-bullet-item {

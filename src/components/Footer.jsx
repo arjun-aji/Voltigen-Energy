@@ -10,37 +10,15 @@ export default function Footer() {
     e.preventDefault();
     setIsSending(true);
 
-    fetch("https://formsubmit.co/ajax/voltigenind@gmail.com", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        "Accept": "application/json"
-      },
-      body: JSON.stringify({
-        name: contactName,
-        email: contactEmail,
-        message: contactMessage,
-        _subject: `New Support Request from ${contactName}`
-      })
-    })
-      .then(response => response.json())
-      .then(data => {
-        if (data.success === "true" || data.success === true) {
-          alert(`Thank you, ${contactName}! Your question has been submitted successfully to our scientific team. We will get back to you shortly.`);
-          setContactName('');
-          setContactEmail('');
-          setContactMessage('');
-        } else {
-          alert("Oops! Something went wrong. Please try again or email us directly at voltigenind@gmail.com.");
-        }
-      })
-      .catch(error => {
-        console.error("Error submitting form:", error);
-        alert("Oops! Something went wrong. Please try again or email us directly at voltigenind@gmail.com.");
-      })
-      .finally(() => {
-        setIsSending(false);
-      });
+    const whatsappBase = "https://wa.me/918714195557?text=";
+    const messageText = `Name: ${contactName}\nEmail: ${contactEmail}\nMessage: ${contactMessage}`;
+    const whatsappUrl = `${whatsappBase}${encodeURIComponent(messageText)}`;
+
+    window.open(whatsappUrl, '_blank');
+    setIsSending(false);
+    setContactName('');
+    setContactEmail('');
+    setContactMessage('');
   };
 
   return (
@@ -89,7 +67,7 @@ export default function Footer() {
                   <svg className="contact-inline-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                     <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
                   </svg>
-                  <a href="tel:+917356037181">+91 7356 037181</a>
+                  <a href="tel:+918714195557">+91 87141 95557</a>
                 </li>
               </ul>
               <div className="footer-map-container">
@@ -120,7 +98,7 @@ export default function Footer() {
               <a href="#" aria-label="Facebook">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
               </a>
-              <a href="https://wa.me/917356037181?text=Question:%20" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+              <a href="https://wa.me/918714195557?text=Question:%20" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
               </a>
               <a href="#" aria-label="Twitter">
