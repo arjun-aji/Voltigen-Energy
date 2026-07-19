@@ -624,6 +624,7 @@ header.scrolled {
     font-size: 18px;
     color: rgba(9, 27, 41, 0.65);
     font-weight: 700;
+    text-decoration: line-through;
 }
 
 .modal-offer-price {
