@@ -735,6 +735,7 @@ header.scrolled {
     max-width: 950px;
     max-height: 90vh;
     overflow-y: auto;
+    overscroll-behavior: contain;
     position: relative;
     box-shadow: 0 25px 50px -12px rgba(9, 27, 41, 0.25);
     transform: scale(0.9) translateY(20px);

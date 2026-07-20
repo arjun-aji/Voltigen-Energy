@@ -23,6 +23,9 @@ export default function App() {
       orientation: 'vertical',
       gestureOrientation: 'vertical',
       smoothWheel: true,
+      prevent: (node) => {
+        return node instanceof Element && node.closest('#product-modal') !== null;
+      },
     });
 
     function raf(time: number) {
@@ -41,17 +44,7 @@ export default function App() {
     };
   }, []);
 
-  // Control scrolling when modal is opened or closed
-  useEffect(() => {
-    const lenis = (window as any).lenis;
-    if (lenis) {
-      if (activeProductId) {
-        lenis.stop();
-      } else {
-        lenis.start();
-      }
-    }
-  }, [activeProductId]);
+
 
   const handleOpenDetails = (productId: ProductIds) => {
     setActiveProductId(productId);
