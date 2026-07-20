@@ -8,8 +8,21 @@
     --transition-elastic: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
+/* Lenis Smooth Scroll Configuration */
+html.lenis,
+html.lenis body {
+    height: auto;
+}
+
+.lenis.lenis-smooth {
+    scroll-behavior: auto !important;
+}
+
+.lenis.lenis-stopped {
+    overflow: hidden;
+}
+
 html {
-    scroll-behavior: smooth;
     scroll-padding-top: 90px;
     /* Offset for sticky header */
 }

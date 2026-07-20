@@ -1,4 +1,5 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import Lenis from 'lenis';
 import Preloader from './components/Preloader';
 import Header from './components/Header';
 import Hero from './components/Hero';
@@ -13,6 +14,44 @@ type ProductIds = 'multivitamin' | 'fishoil';
 
 export default function App() {
   const [activeProductId, setActiveProductId] = useState<ProductIds | null>(null);
+
+  useEffect(() => {
+    // Initialize Lenis smooth scroll
+    const lenis = new Lenis({
+      duration: 1.2,
+      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+      orientation: 'vertical',
+      gestureOrientation: 'vertical',
+      smoothWheel: true,
+    });
+
+    function raf(time: number) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+
+    requestAnimationFrame(raf);
+
+    // Store lenis on window object so we can access it to stop/start scrolling
+    (window as any).lenis = lenis;
+
+    return () => {
+      lenis.destroy();
+      delete (window as any).lenis;
+    };
+  }, []);
+
+  // Control scrolling when modal is opened or closed
+  useEffect(() => {
+    const lenis = (window as any).lenis;
+    if (lenis) {
+      if (activeProductId) {
+        lenis.stop();
+      } else {
+        lenis.start();
+      }
+    }
+  }, [activeProductId]);
 
   const handleOpenDetails = (productId: ProductIds) => {
     setActiveProductId(productId);
