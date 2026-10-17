@@ -149,7 +149,7 @@ export const productsData: Record<'multivitamin' | 'fishoil', ProductInfo> = {
   },
 };
 
-export const whatsAppBookingBase = 'https://wa.me/917356037181?text=';
+export const whatsAppBookingBase = 'https://wa.me/919633916101?text=';
 export const generalBookingText = encodeURIComponent('Please fill the details:\nName:\nAddress:\nProduct:');
 export const multivitaminBookingText = encodeURIComponent('Please fill the details:\nName:\nAddress:\nProduct: Voltigen Daily Multivitamin');
 export const fishoilBookingText = encodeURIComponent('Please fill the details:\nName:\nAddress:\nProduct: Voltigen Ultra Pure Fish Oil');
