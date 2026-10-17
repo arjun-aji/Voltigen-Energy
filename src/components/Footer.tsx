@@ -10,7 +10,7 @@ export default function Footer() {
     e.preventDefault();
     setIsSending(true);
 
-    const whatsappBase = "https://wa.me/918714195557?text=";
+    const whatsappBase = "https://wa.me/919633916101?text=";
     const messageText = `Name: ${contactName}\nEmail: ${contactEmail}\nMessage: ${contactMessage}`;
     const whatsappUrl = `${whatsappBase}${encodeURIComponent(messageText)}`;
 
